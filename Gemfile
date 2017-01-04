@@ -5,6 +5,9 @@ gem 'fancybox-rails', '~> 0.3.1'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+gem 'rmagick', '~> 2.15', '>= 2.15.4'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

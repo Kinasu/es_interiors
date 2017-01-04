@@ -11,7 +11,7 @@
  * file per style scope.
  *
  *= require_tree .
-  *= require fancybox
+ *= require fancybox
  *= require_self
  */
 
@@ -49,3 +49,8 @@
 .thumb {
   padding:5px;
   }
+
+.fancybox-wrap{
+  transition:none;
+}
+

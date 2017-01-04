@@ -64,65 +64,67 @@
           <%= @lorem %>
         </div>
       </div>
-
+<div class="row">
+      <div class="col-xs-12"> <a href="<%= image_path("001.jpg") %>"> <h1> <%= @think %> </h1> </a></div>
+</div>
       <!-- галерея -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_1" title="какая-то картинка" href="<%= image_path("001.jpg") %>">
+              <%= image_tag("001.jpg", :class => 'img-responsive') %>
+            </a>
 
-      <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_1" title="стрекоза" href="<%= image_path("002.jpg") %>">
+              <%= image_tag("002.jpg", :class => 'img-responsive', :title => 'какая-то картинка') %>
+            </a>
+          </div>
 
-          <%= link_to("Project 1", path: "gal-1/001.jpg" rel: "group1", class: "fancyimage") do %>
-            <%= image_tag("gal-1/001.jpg", class: 'img-responsive') %>
-          <% end %>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
-          <a class="fancyimage" rel="group1" href="gal-1/002.jpg">
-            <%= image_tag("gal-1/002.jpg", class: 'img-responsive') %>
-          </a>
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_1" title="какая-то картинка" href="<%= image_path("003.jpg") %>">
+              <%= image_tag("003.jpg", :class => 'img-responsive', :title => 'какая-то картинка') %>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_2" title="какая-то картинка" href="<%= image_path("004.jpg") %>">
+              <%= image_tag("004.jpg", :class => 'img-responsive', :title => 'какая-то картинка') %>
+            </a>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_2" title="какая-то картинка" href="<%= image_path("005.jpg") %>">
+              <%= image_tag("005.jpg", :class => 'img-responsive', :title => 'какая-то картинка') %>
+            </a>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_2" title="какая-то картинка" href="<%= image_path("006.jpg") %>">
+              <%= image_tag("006.jpg", :class => 'img-responsive', :title => 'какая-то картинка') %>
+            </a>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_3" title="белка" href="<%= image_path("007.jpg") %>">
+              <%= image_tag("007.jpg", :class => 'img-responsive', :title => 'какая-то картинка') %>
+            </a>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_3" title="какая-то картинка" href="<%= image_path("008.jpg") %>">
+              <%= image_tag("008.jpg", :class => 'img-responsive', :title => 'какая-то картинка') %>
+            </a>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
+            <a class="fancyimage" data-fancybox-group="group" rel="group_3" title="какая-то картинка" href="<%= image_path("009.jpg") %>">
+              <%= image_tag("009.jpg", :class => 'img-responsive', :title => 'какая-то картинка') %>
+            </a>
+          </div>
         </div>
 
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
-          <a class="fancyimage" rel="group1" href="gal-1/003.jpg">
-            <%= image_tag("gal-1/003.jpg", class: 'img-responsive') %>
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
-          <a class="fancyimage" rel="group2" href="gal-2/004.jpg">
-            <%= image_tag("gal-2/004.jpg", class: 'img-responsive') %>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
-          <a class="fancyimage" rel="group2" href="gal-2/005.jpg">
-            <%= image_tag("gal-2/005.jpg", class: 'img-responsive') %>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
-          <a class="fancyimage" rel="group2" href="gal-2/006.jpg">
-            <%= image_tag("gal-2/006.jpg", class: 'img-responsive') %>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
-          <a class="fancyimage" rel="group3" href="gal-3/007.jpg">
-            <%= image_tag("gal-3/007.jpg", class: 'img-responsive') %>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
-          <a class="fancyimage" rel="group3" href="gal-3/008.jpg">
-            <%= image_tag("gal-3/008.jpg", class: 'img-responsive') %>
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-6 thumb hidden">
-          <a class="fancyimage" rel="group3" href="gal-3/009.jpg">
-            <%= image_tag("gal-3/009.jpg", class: 'img-responsive') %>
-          </a>
-        </div>
       </div>
-
-
       <!-- /галерея -->
 
       <footer>
